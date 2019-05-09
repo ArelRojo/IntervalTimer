@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gimnasio>
+    <grupos>
+        <codigo>Beginner</codigo>
+        <descripcion>10:00 </descripcion>
+    </grupos>
+    <grupos>
+        <codigo>High Intensity</codigo>
+        <descripcion>12:00</descripcion>
+    </grupos>
+    <grupos>
+        <codigo>Legs &amp; Arms</codigo>
+        <descripcion>16:00</descripcion>
+    </grupos>
+</gimnasio>
