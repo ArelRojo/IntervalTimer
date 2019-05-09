@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" prefHeight="302.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="intervaltimer.FXMLDocumentController1">
+   <children>
+      <Button fx:id="buttonAddGr" layoutX="449.0" layoutY="257.0" mnemonicParsing="false" onAction="#AddGrupo" prefHeight="29.0" prefWidth="73.0" text="Añadir">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tv_grupos" layoutX="8.0" layoutY="9.0" prefHeight="277.0" prefWidth="321.0">
+        <columns>
+          <TableColumn fx:id="grupos_column" prefWidth="104.0" text="Grupos" />
+            <TableColumn fx:id="descrip_column" prefWidth="216.0" text="Descripción" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonBorrar" layoutX="534.0" layoutY="257.0" mnemonicParsing="false" onAction="#bt_borrar" prefHeight="29.0" prefWidth="73.0" text="Borrar" />
+      <Separator layoutX="339.0" orientation="VERTICAL" prefHeight="302.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="339.0" AnchorPane.topAnchor="0.0" />
+      <Text layoutX="364.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código grupo:" wrappingWidth="83.13671875" />
+      <Text layoutX="364.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción:" />
+      <TextField fx:id="tf_codigo" layoutX="447.0" layoutY="38.0" />
+      <TextField fx:id="tf_descripcion" layoutX="364.0" layoutY="116.0" prefHeight="118.0" prefWidth="243.0" />
+      <Button fx:id="next" layoutX="345.0" layoutY="249.0" mnemonicParsing="false" onAction="#bt_next" prefHeight="45.0" prefWidth="64.0" />
+      <ImageView fitHeight="39.0" fitWidth="43.0" layoutX="358.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img_439279.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
