@@ -19,6 +19,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import modelo.Grupo;
 import modelo.Sesion;
@@ -33,22 +34,20 @@ public class FXMLSesionController implements Initializable {
 
     @FXML
     private AnchorPane AnchorPane;
-    @FXML
-    private Button buttonAddSesion;
-    @FXML
-    private TableView<Sesion> tv_sesiones;
-    @FXML
-    private TableColumn<?, ?> sesion_column;
-    @FXML
-    private TableColumn<?, ?> descripSesion_column;
-    @FXML
-    private Button botonBorrarSesion;
     private IntervalTimer app;
     public Stage primaryStage;
     AccesoBD dao;
     private ObservableList<Sesion> sesiones;
     private ObservableList<Grupo> grupo;
     AccesoBD model;
+    @FXML
+    private TableView<?> tv_ejercicios;
+    @FXML
+    private TableColumn<?, ?> tiposesion_column;
+    @FXML
+    private Text crono_text;
+    @FXML
+    private Text hora_text;
     /**
      * Initializes the controller class.
      */
@@ -58,12 +57,17 @@ public class FXMLSesionController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void AddGrupo(ActionEvent event) {
-    }
 
     @FXML
     private void bt_borrar(ActionEvent event) {
+    }
+
+    @FXML
+    private void bt_start(ActionEvent event) {
+    }
+
+    @FXML
+    private void bt_reset(ActionEvent event) {
     }
     
     
